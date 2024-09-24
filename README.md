@@ -1,8 +1,10 @@
-
 # spatialHPC
 
 <!-- badges: start -->
+
 <!-- badges: end -->
+
+[![R build status](https://github.com/LieberInstitute/spatialLIBD/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/LieberInstitute/spatialLIBD/actions)
 
 The goal of spatialHPC is to ...
 
@@ -24,6 +26,5 @@ library(spatialHPC)
 ```
 
 ## Code of Conduct
-  
-Please note that the spatialHPC project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
 
+Please note that the spatialHPC project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
