@@ -1,0 +1,33 @@
+Package: spatialHPC
+Title: Access to spatialHPC project data
+Version: 0.99.0
+Date: 2024-09-20
+Authors@R: 
+    person(
+        given = "Christine", 
+        family = "Hou",
+        email = "chris2018hou@gmail.com", 
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0009-0001-5350-0629")
+    )
+Description: What the package does (one paragraph).
+License: Artistic-2.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0),
+    sessioninfo,
+    rmarkdown,
+    knitr,
+    BiocStyle,
+    ExperimentHub,
+    AnnotationHubData,
+    SummarizedExperiment,
+    RefManageR
+Config/testthat/edition: 3
+BugReports: https://support.bioconductor.org/t/spatialHPC
+biocViews: ExperimentHub, human_hippocampus_Data, SequencingData, 
+    RNAseqData, SpatialData, ExpressionData
+URL: https://github.com/LieberInstitute/spatial_hpc
+VignetteBuilder: knitr

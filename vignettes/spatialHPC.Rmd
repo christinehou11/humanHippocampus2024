@@ -1,0 +1,150 @@
+---
+title: "spatialHPC Tutorial"
+author: 
+  - name: Christine Hou
+    affiliation:
+    - Department of Biostatistics, Johns Hopkins University
+    email: chris2018hou@gmail.com
+output: 
+  BiocStyle::html_document:
+    self_contained: yes
+    toc: true
+    toc_float: true
+    toc_depth: 2
+    code_folding: show
+date: "`r doc_date()`"
+package: "`r pkg_ver('spatialHPC')`"
+vignette: >
+  %\VignetteIndexEntry{spatialHPC Tutorial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}  
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+    collapse = TRUE,
+    comment = "#>"
+)
+```
+
+### Introduction
+
+Welcome to the `spatial_HPC` project! In this vignettes, we are going to show how to access the spatially-resolved transcriptomics (SRT) and single-nucleus RNA-sequencing (snRNA-seq) data from adjacent tissue sections of the anterior human hippocampus across ten adult neurotypical donors generated at the Lieber Institute for Brain Development (LIBD). 
+
+#### Motivation
+
+The main purpose to create R/Bioconductor package was to access the SRT and snRNA-seq data from `spatial_HPC` project via an open-source and public interface such that the data can be referenced or analyzed in other projects conveniently.
+
+#### Study Design
+
+<figure><img src="../man/figures/study_design.png" align="center" width="800px"/></figure>
+
+Experimental design to generate paired single-nucleus RNA-sequencing (snRNA-seq) and spatially-resolved transcriptomics (SRT) data in the human hippocampus. (A) Postmortem human tissue blocks from the anterior hippocampus were dissected from 10 adult neurotypical brain donors. Tissue blocks were scored and cryosectioned for snRNA-seq assays (red), and placement on Visium slides (Visium H&E, black; Visium Spatial Proteogenomics (SPG), yellow). (B) 10μm tissue sections from all ten donors were placed onto 2-5 capture areas to include the extent of the HPC(n=36 total capture areas), for measurement with the 10x Genomics Visium H&E platform. (C) 10μm tissue sections from two donors were placed onto 4 capture areas (n=8 total capture areas) for measurement with the 10x Genomics Visium-SPG platform. (D) Tissue sections (2-4 100μm cryosections per assay) from all ten donors were collected from the same tissue blocks for measurement with the 10x Genomics 3’ gene expression platform. For each donor, we sorted on both and PI+NeuN+ (n=26 total snRNA-seq libraries). (This figure was created with [Biorender](https://www.biorender.com/))
+
+#### Data Access
+
+All data, including raw FASTQ files and SpaceRanger/CellRanger processed data outputs, can be accessed via Gene Expression Omnibus (GEO) under accessions [GSE264692](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE264692) (SRT) and [GSE264624](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE264624) (snRNA-seq).
+
+All R scripts created to perform analyses can be found [here](https://github.com/LieberInstitute/spatial_hpc).
+
+#### Contact
+
+We value public questions, as they allow other users to learn from the answers. If you have any questions, please ask them at [LieberInstitute/spatial_hpc/issues](https://github.com/LieberInstitute/spatial_hpc/issues) and refrain from emailing us. Thank you again for your interest in our work!
+
+### Package Tutorial
+
+#### Installation
+
+`spatialHPC` is an R package available via [Bioconductor](http://bioconductor.org/) repository for packages. GitHub repository can be found [here](https://github.com/christinehou11/spatialHPC).
+
+```{r install, eval=FALSE}
+if (!requireNamespace("BiocManager", quietly = TRUE)) {
+    install.packages("BiocManager")
+}
+
+BiocManager::install("spatialHPC")
+
+## Check that you have a valid Bioconductor installation
+BiocManager::valid()
+```
+
+#### Datasets Overview
+
+SRT data was generated using [10x Genomics Visium](https://www.10xgenomics.com/products/spatial-gene-expression) (n=36 capture areas) and [10x Genomics Visium Spatial Proteogenomics (SPG)](https://www.10xgenomics.com/products/spatial-gene-and-protein-expression) (n=8 capture areas). snRNA-seq data was generated using [10x Genomics Chromium](https://www.10xgenomics.com/products/single-cell-gene-expression) (n=26 total snRNA-seq libraries).
+
+
+#### Download datasets
+
+```{r prep}
+library(ExperimentHub)
+library(RefManageR)
+library(SummarizedExperiment)
+library(spatialHPC)
+```
+
+```{r connect}
+## Connect to ExperimentHub
+ehub <- ExperimentHub()
+
+## Load the datasets of the package
+myfiles <- query(ehub, "spatialHPC")
+myfiles
+```
+
+#### Citation
+
+```{r citation}
+citation("spatialHPC")
+```
+
+### Bibliography
+
+```{r bib}
+bib <- c(
+    R = citation(),
+    AnnotationHubData = citation("AnnotationHubData")[1],
+    ExperimentHub = citation("ExperimentHub")[1],
+    BiocStyle = citation("BiocStyle")[1],
+    knitr = citation("knitr")[1],
+    RefManageR = citation("RefManageR")[1],
+    rmarkdown = citation("rmarkdown")[1],
+    sessioninfo = citation("sessioninfo")[1],
+    testthat = citation("testthat")[1]
+)
+```
+
+
+```{r vignetteSetup, echo=FALSE, message=FALSE, warning = FALSE}
+startTime <- Sys.time()
+
+library("RefManageR")
+
+bib <- c(
+    R = citation(),
+    AnnotationHubData = citation("AnnotationHubData")[1],
+    ExperimentHub = citation("ExperimentHub")[1],
+    BiocStyle = citation("BiocStyle")[1],
+    knitr = citation("knitr")[1],
+    RefManageR = citation("RefManageR")[1],
+    rmarkdown = citation("rmarkdown")[1],
+    sessioninfo = citation("sessioninfo")[1],
+    testthat = citation("testthat")[1]
+)
+```
+
+Date the vignette was generated.
+
+```{r time, echo=FALSE}
+Sys.time()
+totalTime <- diff(c(startTime, Sys.time()))
+round(totalTime, digits = 3)
+```
+
+# `R` session information {.unnumbered}
+
+```{r 'sessionInfo', echo=FALSE}
+# Session info
+library(sessioninfo)
+options(width = 120)
+session_info()
+```

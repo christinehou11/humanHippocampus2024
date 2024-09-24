@@ -1,0 +1,7 @@
+pandoc: 3.1.11
+pkgdown: 2.1.1
+pkgdown_sha: ~
+articles:
+  spatialHPC_vignettes: spatialHPC_vignettes.html
+  spatialHPC: spatialHPC.html
+last_built: 2024-09-24T20:09Z

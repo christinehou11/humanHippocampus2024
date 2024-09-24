@@ -1,0 +1,18 @@
+pkgVer <- function(pkg) {
+    if (!exists("meta") || is.null(meta)) meta <- packageDescription(pkg)
+    ver <- meta$Version
+    paste0('https://github.com/LieberInstitute/spatial_hpc/', pkg, ' - R package version ', ver)
+}
+
+c(
+    bibentry(
+        bibtype  = "manual",
+        title    = "Access to spatialHPC project data",
+        author   = personList(
+            as.person("Christine Hou"),
+            as.person("Stephanie C. Hicks")
+        ),
+        year     = format(Sys.Date(), "%Y"),
+        note    = pkgVer('spatialHPC') 
+    )
+)
