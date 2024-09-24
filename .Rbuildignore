@@ -1,12 +1,9 @@
-^LICENSE\.md$
 ^\.github$
+^.*\.Rproj$
 ^spatialHPC\.Rproj$
-^dev$
-^README\.Rmd$
 ^codecov\.yml$
 ^_pkgdown\.yml$
 ^docs$
 ^CODE_OF_CONDUCT\.md$
-^LICENSE\.md$
 ^pkgdown$
 ^\.Rproj\.user$
