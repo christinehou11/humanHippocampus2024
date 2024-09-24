@@ -17,9 +17,9 @@ c(
         doi = '10.18129/B9.bioc.spatialHPC'
     ),
     bibentry(bibtype="article",
-        title = "",
+        title = "An integrated single-nucleus and spatial transcriptomics atlas reveals the molecular landscape of the human hippocampus",
         author = personList(
-            as.person("Erik D Nelson")
+            as.person("Erik D. Nelson")
         ),
         year = format(Sys.Date(), "%Y"),
         journal = "bioRxiv",

@@ -18,6 +18,7 @@ License: Artistic-2.0
 Useful links:
 \itemize{
   \item \url{https://github.com/LieberInstitute/spatial_hpc}
+  \item \url{https://christinehou11.github.io/spatialHPC/}
   \item Report bugs at \url{https://support.bioconductor.org/t/spatialHPC}
 }
 
