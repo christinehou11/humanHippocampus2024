@@ -1,18 +1,29 @@
 pkgVer <- function(pkg) {
     if (!exists("meta") || is.null(meta)) meta <- packageDescription(pkg)
     ver <- meta$Version
-    paste0('https://github.com/LieberInstitute/spatial_hpc/', pkg, ' - R package version ', ver)
+    paste0('https://github.com/christinehou11/spatialHPC/', pkg, ' - R package version ', ver)
 }
 
 c(
-    bibentry(
-        bibtype  = "manual",
-        title    = "Access to spatialHPC project data",
-        author   = personList(
-            as.person("Christine Hou"),
-            as.person("Stephanie C. Hicks")
+
+    bibentry(bibtype="manual",
+        title = "Access to spatial HPC project data",
+        author = personList(
+            as.person("Christine Hou")
         ),
-        year     = format(Sys.Date(), "%Y"),
-        note    = pkgVer('spatialHPC') 
+        year = format(Sys.Date(), "%Y"),
+        url = "http://www.bioconductor.org/packages/spatialHPC",
+        note = pkgVer('spatialHPC'),
+        doi = '10.18129/B9.bioc.spatialHPC'
+    ),
+    bibentry(bibtype="article",
+        title = "",
+        author = personList(
+            as.person("Erik D Nelson")
+        ),
+        year = format(Sys.Date(), "%Y"),
+        journal = "bioRxiv",
+        doi = "10.1101/TODO",
+        url = "https://www.biorxiv.org/content/10.1101/TODO"
     )
 )
