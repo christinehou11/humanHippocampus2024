@@ -29,5 +29,5 @@ Config/testthat/edition: 3
 BugReports: https://support.bioconductor.org/t/spatialHPC
 biocViews: ExperimentHub, human_hippocampus_Data, SequencingData, 
     RNAseqData, SpatialData, ExpressionData
-URL: https://github.com/LieberInstitute/spatial_hpc
+URL: https://github.com/LieberInstitute/spatial_hpc, https://christinehou11.github.io/spatialHPC/
 VignetteBuilder: knitr
