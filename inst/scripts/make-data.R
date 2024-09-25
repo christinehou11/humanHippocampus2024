@@ -1,7 +1,7 @@
 # Run locally to read the spe and sce data
-# Both data can be accessed on JHPCE at 
+# Both data can be accessed on JHPCE at
 # /dcs04/lieber/lcolladotor/spatialHPC_LIBD4035/spatial_hpc/processed-data/
-# See https://github.com/LieberInstitute/spatial_hpc for more details of 
+# See https://github.com/LieberInstitute/spatial_hpc for more details of
 # spatial HPC project
 
 library(here)
@@ -12,17 +12,19 @@ library(SummarizedExperiment)
 
 
 ################################################################################
-##                     1.  Load and build datasets                   
+##                     1.  Load and build datasets
 ################################################################################
 
 # spe
 load(here("~/Desktop/spe_nmf_final.rda"))
+spe
 # sce
 load(here("~/Desktop/sce_final.rda"))
+sce
 
 
 ################################################################################
-##                      3. Add metadata and save datasets                   
+##                      3. Add metadata and save datasets
 ################################################################################
 
 # Add metadata
@@ -34,7 +36,7 @@ metadata(sce) <- list(
     "Obtained_from"="https://github.com/LieberInstitute/spatial_hpc"
     )
 
-# Save 
+# Save
 save(spe, file="~/Desktop/spatialHPC/inst/extdata/spe.rda", version = 2)
 save(sce, file="~/Desktop/spatialHPC/inst/extdata/sce.rda", version = 2)
 
@@ -58,7 +60,7 @@ session_info()
 # date     2024-09-23
 # rstudio  2024.04.1+748 Chocolate Cosmos (desktop)
 # pandoc   3.1.11 @ /Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools/aarch64/ (via rmarkdown)
-# 
+#
 # ─ Packages ───────────────────────────────────────────────────────────────────
 # package              * version   date (UTC) lib source
 # abind                    1.4-8     2024-09-12 [1] CRAN (R 4.3.3)
@@ -221,5 +223,5 @@ session_info()
 # zlibbioc                 1.48.2    2024-03-19 [1] Bioconductor 3.18 (R 4.3.3)
 #
 # [1] /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library
-# 
+#
 # ─────────────────────────────────────────────────────────────────────────────
