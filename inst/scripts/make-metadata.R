@@ -40,6 +40,7 @@ meta <- data.frame(
     stringsAsFactors = FALSE
     )
 
+
 write.csv(
     meta,
     file = here::here("inst", "extdata", "metadata.csv"),
