@@ -7,3 +7,4 @@
 ^CODE_OF_CONDUCT\.md$
 ^\.Rproj\.user$
 ^data-raw$
+^pkgdown$
