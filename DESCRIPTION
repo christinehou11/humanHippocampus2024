@@ -1,4 +1,4 @@
-Package: spatialHPC
+Package: humanHippocampus2024
 Title: Access to spatialHPC project data
 Version: 0.99.0
 Date: 2024-09-20
@@ -26,7 +26,7 @@ Suggests:
     SummarizedExperiment,
     RefManageR
 Config/testthat/edition: 3
-BugReports: https://support.bioconductor.org/t/spatialHPC
+BugReports: https://support.bioconductor.org/t/humanHippocampus2024
 biocViews: ExperimentHub, SequencingData, SpatialData, ExpressionData
-URL: https://github.com/LieberInstitute/spatial_hpc, https://christinehou11.github.io/spatialHPC/
+URL: https://github.com/LieberInstitute/spatial_hpc, https://christinehou11.github.io/humanHippocampus2024/
 VignetteBuilder: knitr

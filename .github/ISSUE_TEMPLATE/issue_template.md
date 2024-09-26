@@ -6,7 +6,7 @@ labels: ''
 assignees: ''
 ---
 
-Please ask questions about how to use `spatialHPC` on the
+Please ask questions about how to use `humanHippocampus2024` on the
 [Bioconductor Support Site](https://support.bioconductor.org) using the
 appropriate tag(s) including the one for this package.
 

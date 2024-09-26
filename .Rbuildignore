@@ -1,6 +1,6 @@
 ^\.github$
 ^.*\.Rproj$
-^spatialHPC\.Rproj$
+^humanHippocampus2024\.Rproj$
 ^codecov\.yml$
 ^_pkgdown\.yml$
 ^docs$

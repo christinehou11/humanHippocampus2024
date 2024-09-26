@@ -37,8 +37,8 @@ metadata(sce) <- list(
     )
 
 # Save
-save(spe, file="~/Desktop/spatialHPC/data-raw/spatialHPC_files/spe.rda", version = 2)
-save(sce, file="~/Desktop/spatialHPC/data-raw/spatialHPC_files/sce.rda", version = 2)
+save(spe, file="~/Desktop/humanHippocampus2024/data-raw/humanHippocampus2024_files/spe.rda", version = 2)
+save(sce, file="~/Desktop/humanHippocampus2024/data-raw/humanHippocampus2024_files/sce.rda", version = 2)
 
 ## Reproducibility information
 print("Reproducibility information:")

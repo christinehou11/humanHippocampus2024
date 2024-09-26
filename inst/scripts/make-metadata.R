@@ -2,8 +2,8 @@ library(here)
 library(sessioninfo)
 
 
-outdir <- "spatialHPC_files"
-pkgname <- "spatialHPC"
+outdir <- "humanHippocampus2024_files"
+pkgname <- "humanHippocampus2024"
 
 meta <- data.frame(
     Title = c(
@@ -12,8 +12,8 @@ meta <- data.frame(
     ),
     Description = c(
         "SpatialExperiment with spatially-resolved transcriptomics (SRT) from adjacent tissue sections of the anterior human hippocampus across ten adult neurotypical donors usng 10x Genomics Visium, generated at the Lieber Institute for Brain Development (LIBD) and available through
-        the spatialHPC Bioconductor package",
-        "SingleCellExperiment with single-nucleus RNA-sequencing (snRNA-seq) from adjacent tissue sections of the anterior human hippocampus across ten adult neurotypical donors usng 10x Genomics Visium, generated at the  Lieber Institute for Brain Development (LIBD) and available through the spatialHPC Bioconductor package"
+        the humanHippocampus2024 Bioconductor package",
+        "SingleCellExperiment with single-nucleus RNA-sequencing (snRNA-seq) from adjacent tissue sections of the anterior human hippocampus across ten adult neurotypical donors usng 10x Genomics Visium, generated at the  Lieber Institute for Brain Development (LIBD) and available through the humanHippocampus2024 Bioconductor package"
     ),
     BiocVersion = "3.18",
     Genome = "GRCh38",
@@ -207,7 +207,7 @@ session_info()
 # smokingMouse           * 1.0.0     2023-10-26 [1] Bioconductor
 # SparseArray              1.2.4     2024-02-10 [1] Bioconductor 3.18 (R 4.3.2)
 # SpatialExperiment      * 1.12.0    2023-10-26 [1] Bioconductor
-# P spatialHPC             * 0.99.0    2024-09-23 [?] Bioconductor
+# P humanHippocampus2024             * 0.99.0    2024-09-26 [?] Bioconductor
 # stringdist               0.9.12    2023-11-28 [1] CRAN (R 4.3.1)
 # stringi                  1.8.4     2024-05-06 [1] CRAN (R 4.3.1)
 # stringr                  1.5.1     2023-11-14 [1] CRAN (R 4.3.1)

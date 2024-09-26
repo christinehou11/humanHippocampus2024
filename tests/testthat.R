@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(spatialHPC)
+library(humanHippocampus2024)
 
-test_check("spatialHPC")
+test_check("humanHippocampus2024")

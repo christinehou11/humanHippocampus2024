@@ -1,7 +1,7 @@
 pkgVer <- function(pkg) {
     if (!exists("meta") || is.null(meta)) meta <- packageDescription(pkg)
     ver <- meta$Version
-    paste0('https://github.com/christinehou11/spatialHPC/', pkg, ' - R package version ', ver)
+    paste0('https://github.com/christinehou11/humanHippocampus2024/', pkg, ' - R package version ', ver)
 }
 
 c(
@@ -12,9 +12,9 @@ c(
             as.person("Christine Hou")
         ),
         year = format(Sys.Date(), "%Y"),
-        url = "http://www.bioconductor.org/packages/spatialHPC",
-        note = pkgVer('spatialHPC'),
-        doi = '10.18129/B9.bioc.spatialHPC'
+        url = "http://www.bioconductor.org/packages/humanHippocampus2024",
+        note = pkgVer('humanHippocampus2024'),
+        doi = '10.18129/B9.bioc.humanHippocampus2024'
     ),
     bibentry(bibtype="article",
         title = "An integrated single-nucleus and spatial transcriptomics atlas reveals the molecular landscape of the human hippocampus",

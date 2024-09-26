@@ -1,11 +1,10 @@
 ---
-title: "spatialHPC Tutorial"
+title: "humanHippocampus2024 Tutorial"
 author: 
   - name: Christine Hou
     affiliation:
     - Department of Biostatistics, Johns Hopkins University
     email: chris2018hou@gmail.com
-  - name: Stephanie C. Hicks
 output: 
   BiocStyle::html_document:
     self_contained: yes
@@ -14,9 +13,9 @@ output:
     toc_depth: 2
     code_folding: show
 date: "`r doc_date()`"
-package: "`r pkg_ver('spatialHPC')`"
+package: "`r pkg_ver('humanHippocampus2024')`"
 vignette: >
-  %\VignetteIndexEntry{spatialHPC Tutorial}
+  %\VignetteIndexEntry{humanHippocampus2024 Tutorial}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}  
 ---
@@ -30,7 +29,7 @@ knitr::opts_chunk$set(
 
 ### Introduction
 
-Welcome to the `spatial_HPC` project! In this vignettes, we are going to show how to access the spatially-resolved transcriptomics (SRT) and single-nucleus RNA-sequencing (snRNA-seq) data from adjacent tissue sections of the anterior human hippocampus across ten adult neurotypical donors generated at the Lieber Institute for Brain Development (LIBD). 
+Welcome to the `humanHippocampus2024` package! In this vignettes, we are going to show how to access the spatially-resolved transcriptomics (SRT) and single-nucleus RNA-sequencing (snRNA-seq) data from adjacent tissue sections of the anterior human hippocampus across ten adult neurotypical donors generated at the Lieber Institute for Brain Development (LIBD). 
 
 #### Motivation
 
@@ -56,14 +55,14 @@ We value public questions, as they allow other users to learn from the answers. 
 
 #### Installation
 
-`spatialHPC` is an R package available via [Bioconductor](http://bioconductor.org/) repository for packages. GitHub repository can be found [here](https://github.com/christinehou11/spatialHPC).
+`humanHippocampus2024` is an R package available via [Bioconductor](http://bioconductor.org/) repository for packages. GitHub repository can be found [here](https://github.com/christinehou11/humanHippocampus2024).
 
 ```{r install, eval=FALSE}
 if (!requireNamespace("BiocManager", quietly = TRUE)) {
     install.packages("BiocManager")
 }
 
-BiocManager::install("spatialHPC")
+BiocManager::install("humanHippocampus2024")
 
 ## Check that you have a valid Bioconductor installation
 BiocManager::valid()
@@ -80,7 +79,7 @@ SRT data was generated using [10x Genomics Visium](https://www.10xgenomics.com/p
 library(ExperimentHub)
 library(RefManageR)
 library(SummarizedExperiment)
-library(spatialHPC)
+library(humanHippocampus2024)
 ```
 
 ```{r connect}
@@ -88,14 +87,14 @@ library(spatialHPC)
 ehub <- ExperimentHub()
 
 ## Load the datasets of the package
-myfiles <- query(ehub, "spatialHPC")
+myfiles <- query(ehub, "humanHippocampus2024")
 myfiles
 ```
 
 #### Citation
 
 ```{r citation}
-citation("spatialHPC")
+citation("humanHippocampus2024")
 ```
 
 ### Bibliography
