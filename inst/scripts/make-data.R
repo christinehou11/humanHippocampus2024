@@ -37,8 +37,8 @@ metadata(sce) <- list(
     )
 
 # Save
-save(spe, file="~/Desktop/spatialHPC/inst/extdata/spe.rda", version = 2)
-save(sce, file="~/Desktop/spatialHPC/inst/extdata/sce.rda", version = 2)
+save(spe, file="~/Desktop/spatialHPC/data-raw/spe.rda", version = 2)
+save(sce, file="~/Desktop/spatialHPC/dara-raw/sce.rda", version = 2)
 
 ## Reproducibility information
 print("Reproducibility information:")

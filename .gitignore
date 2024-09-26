@@ -5,5 +5,4 @@
 .DS_Store
 *.Rproj
 docs/
-dev
-docs
+data-raw/

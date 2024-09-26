@@ -5,7 +5,5 @@
 ^_pkgdown\.yml$
 ^docs$
 ^CODE_OF_CONDUCT\.md$
-^pkgdown$
 ^\.Rproj\.user$
-^dev$
-^codecov\.yml$
+^data-raw$
