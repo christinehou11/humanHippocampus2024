@@ -5,6 +5,7 @@ author:
     affiliation:
     - Department of Biostatistics, Johns Hopkins University
     email: chris2018hou@gmail.com
+  - name: Stephanie C. Hicks
 output: 
   BiocStyle::html_document:
     self_contained: yes
