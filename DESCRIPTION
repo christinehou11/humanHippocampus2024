@@ -1,5 +1,5 @@
 Package: humanHippocampus2024
-Title: Access to spatialHPC project data
+Title: Access to SRT and snRNA-seq data from spatial_HPC project
 Version: 0.99.0
 Date: 2024-09-20
 Authors@R: 
@@ -10,7 +10,13 @@ Authors@R:
         role = c("aut", "cre"),
         comment = c(ORCID = "0009-0001-5350-0629")
     )
-Description: What the package does (one paragraph).
+Description: This is an ExperimentHub package that helps to access the 
+    spatially-resolved transcriptomics and single-nucleus RNA sequencing data.
+    The datasets are generated from adjacent tissue sections of the anterior 
+    human hippocampus across ten adult neurotypical donors. The datasets are
+    based on [spatial_hpc](https://github.com/LieberInstitute/spatial_hpc) 
+    project by Lieber Institute for Brain Development (LIBD) researchers and 
+    collaborators.
 License: Artistic-2.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

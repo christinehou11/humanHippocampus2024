@@ -2,9 +2,8 @@
 
 <!-- badges: start -->
 
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![check-bioc](https://github.com/christinehou11/humanHippocampus2024/actions/workflows/check-bioc.yml/badge.svg)](https://github.com/christinehou11/humanHippocampus2024/actions/workflows/check-bioc.yml)
-[![Codecov test coverage](https://codecov.io/gh/christinehou11/humanHippocampus2024/graph/badge.svg)](https://app.codecov.io/gh/christinehou11/humanHippocampus2024)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental) [![check-bioc](https://github.com/christinehou11/humanHippocampus2024/actions/workflows/check-bioc.yml/badge.svg)](https://github.com/christinehou11/humanHippocampus2024/actions/workflows/check-bioc.yml) [![Codecov test coverage](https://codecov.io/gh/christinehou11/humanHippocampus2024/graph/badge.svg)](https://app.codecov.io/gh/christinehou11/humanHippocampus2024)
+
 <!-- badges: end -->
 
 The goal of humanHippocampus2024 is to ...
@@ -14,16 +13,21 @@ The goal of humanHippocampus2024 is to ...
 You can install the development version of humanHippocampus2024 like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+if (!requireNamespace("BiocManager", quietly = TRUE)) {
+    install.packages("BiocManager")
+}
+
+BiocManager::install("humanHippocampus2024")
+
+## Check that you have a valid Bioconductor installation
+BiocManager::valid()
 ```
 
-## Example
-
-This is a basic example which shows you how to solve a common problem:
+The development version can be installed from GitHub:
 
 ``` r
-library(humanHippocampus2024)
-## basic example code
+install.packages("remotes")
+remotes::install_github("christinehou11/humanHippocampus2024")
 ```
 
 ## Code of Conduct

@@ -68,6 +68,14 @@ BiocManager::install("humanHippocampus2024")
 BiocManager::valid()
 ```
 
+The development version can be installed from GitHub:
+
+```{r github, eval=FALSE}
+install.packages("remotes")
+remotes::install_github("christinehou11/humanHippocampus2024")
+```
+
+
 #### Datasets Overview
 
 SRT data was generated using [10x Genomics Visium](https://www.10xgenomics.com/products/spatial-gene-expression) (n=36 capture areas) and [10x Genomics Visium Spatial Proteogenomics (SPG)](https://www.10xgenomics.com/products/spatial-gene-and-protein-expression) (n=8 capture areas). snRNA-seq data was generated using [10x Genomics Chromium](https://www.10xgenomics.com/products/single-cell-gene-expression) (n=26 total snRNA-seq libraries).
