@@ -30,6 +30,8 @@ install.packages("remotes")
 remotes::install_github("christinehou11/humanHippocampus2024")
 ```
 
+Please read [Introduction to humanHippocampus2024](https://christinehou11.github.io/humanHippocampus2024/articles/humanHippocampus2024.html) for detailed descriptions and tutorials.
+
 ## Code of Conduct
 
 Please note that the humanHippocampus2024 project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
