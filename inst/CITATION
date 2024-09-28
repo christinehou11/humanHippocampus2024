@@ -19,11 +19,29 @@ c(
     bibentry(bibtype="article",
         title = "An integrated single-nucleus and spatial transcriptomics atlas reveals the molecular landscape of the human hippocampus",
         author = personList(
-            as.person("Erik D. Nelson")
+            as.person("Erik D. Nelson"),
+            as.person("Madhavi Tippani"),
+            as.person("Anthony D. Ramnauth"),
+            as.person("Heena R. Divecha"),
+            as.person("Ryan A. Miller"),
+            as.person("Nicholas J. Eagles"),
+            as.person("Elizabeth A. Pattie"),
+            as.person("Sang Ho Kwon"),
+            as.person("Svitlana V. Bach"),
+            as.person("Uma M. Kaipa"),
+            as.person("Jianing Yao"),
+            as.person("Joel E. Kleinman"),
+            as.person("Leonardo Collado-Torres"),
+            as.person("Shizhong Han"),
+            as.person("Kristen R. Maynard"),
+            as.person("Thomas M. Hyde"),
+            as.person("Keri Martinowich"),
+            as.person("Stephanie C. Page"),
+            as.person("Stephanie C. Hicks")
         ),
         year = format(Sys.Date(), "%Y"),
         journal = "bioRxiv",
-        doi = "10.1101/TODO",
-        url = "https://www.biorxiv.org/content/10.1101/TODO"
+        doi = "https://doi.org/10.1101/2024.04.26.590643",
+        url = "https://www.biorxiv.org/content/10.1101/2024.04.26.590643v1"
     )
 )

@@ -5,9 +5,9 @@
 \alias{humanHippocampus2024}
 \alias{humanHippocampus2024-package}
 \alias{human-hippocampus}
-\title{humanHippocampus2024: Access to spatialHPC project data}
+\title{humanHippocampus2024: Access to SRT and snRNA-seq data from spatial_HPC project}
 \description{
-What the package does (one paragraph).
+This is an ExperimentHub package that helps to access the spatially-resolved transcriptomics and single-nucleus RNA sequencing data. The datasets are generated from adjacent tissue sections of the anterior human hippocampus across ten adult neurotypical donors. The datasets are based on [spatial_hpc](https://github.com/LieberInstitute/spatial_hpc) project by Lieber Institute for Brain Development (LIBD) researchers and collaborators.
 
 This is an ExperimentHub package that provides access to the
 data generated and analyzed in the
