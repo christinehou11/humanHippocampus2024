@@ -10,7 +10,7 @@ Welcome to the `humanHippocampus2024` package! This package helps to access the 
 
 ## Installation
 
-You can install the development version of humanHippocampus2024 like so:
+You can install humanHippocampus2024 like so:
 
 ``` r
 if (!requireNamespace("BiocManager", quietly = TRUE)) {
