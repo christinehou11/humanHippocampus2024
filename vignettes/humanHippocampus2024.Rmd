@@ -60,7 +60,6 @@ We value public questions, as they allow other users to learn from the answers. 
 ```{r install, eval=FALSE}
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-BiocManager::install(version = "devel")
 # Bioconductor version of 3.20 on R 4.4.1 by October 3rd, 2024
 
 BiocManager::install("humanHippocampus2024")
@@ -81,6 +80,10 @@ remotes::install_github("christinehou11/humanHippocampus2024")
 #### Load necessary packages
 
 ```{r prep,message=FALSE, warning=FALSE}
+BiocManager::install(version = "devel")
+
+BiocManager::install(c("ExperimentHub","RefManageR","SummarizedExperiment","SpatialExperiment"))
+
 library(ExperimentHub)
 library(RefManageR)
 library(SummarizedExperiment)
@@ -93,7 +96,6 @@ library(humanHippocampus2024)
 ```{r connect}
 ## Connect to ExperimentHub
 ehub <- ExperimentHub()
-
 
 ## Load the datasets of the package
 myfiles <- query(ehub, "humanHippocampus2024")
