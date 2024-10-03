@@ -80,10 +80,6 @@ remotes::install_github("christinehou11/humanHippocampus2024")
 #### Load necessary packages
 
 ```{r prep,message=FALSE, warning=FALSE}
-BiocManager::install(version = "devel")
-
-BiocManager::install(c("ExperimentHub","RefManageR","SummarizedExperiment","SpatialExperiment"))
-
 library(ExperimentHub)
 library(RefManageR)
 library(SummarizedExperiment)
@@ -220,6 +216,8 @@ The *humanHippocampus2024* package was made possible thanks to:
 -   `r Biocpkg('AnnotationHub')` `r Citep(bib[['AnnotationHub']])`
 -   `r Biocpkg('ExperimentHub')` `r Citep(bib[['ExperimentHub']])`
 -   `r Biocpkg('SummarizedExperiment')` `r Citep(bib[['SummarizedExperiment']])`
+
+This package was developed using `r BiocStyle::Biocpkg("biocthis")`
 
 ```{r vignetteSetup, echo=FALSE, message=FALSE, warning = FALSE}
 startTime <- Sys.time()
