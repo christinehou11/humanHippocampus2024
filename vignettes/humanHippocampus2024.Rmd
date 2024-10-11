@@ -189,6 +189,8 @@ head(spatialCoords(spatial_hpc_spe))
 
 # Access the image data
 head(imgData(spatial_hpc_spe))
+
+rm(spatial_hpc_spe)
 ```
 
 #### snRNA-seq dataset
@@ -229,6 +231,7 @@ assays(spatial_hpc_snrna_seq)$logcounts[1:3, 1:3]
 reducedDimNames(spatial_hpc_snrna_seq)
 reducedDim(spatial_hpc_snrna_seq, "PCA")[1:5,]
 
+rm(spatial_hpc_snrna_seq)
 ```
 
 ### Citation
