@@ -59,7 +59,7 @@ Hou</h4>
 University<br><a class="author_email" href="mailto:#"></a><a href="mailto:chris2018hou@gmail.com" class="email">chris2018hou@gmail.com</a>
       </address>
                   
-            <h4 data-toc-skip class="date">3 October 2024</h4>
+            <h4 data-toc-skip class="date">11 October 2024</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/LieberInstitute/spatial_hpc/blob/HEAD/vignettes/humanHippocampus2024.Rmd" class="external-link"><code>vignettes/humanHippocampus2024.Rmd</code></a></small>
       <div class="d-none name"><code>humanHippocampus2024.Rmd</code></div>
@@ -185,6 +185,9 @@ packages. GitHub repository can be found <a href="https://github.com/christineho
 <span></span>
 <span><span class="co">## Load the datasets of the package</span></span>
 <span><span class="va">myfiles</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/AnnotationHub/man/AnnotationHub-class.html" class="external-link">query</a></span><span class="op">(</span><span class="va">ehub</span>, <span class="st">"humanHippocampus2024"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co">## Data is only available on recent snappshots</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/stopifnot.html" class="external-link">stopifnot</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/AnnotationHub/man/AnnotationHub-class.html" class="external-link">snapshotDate</a></span><span class="op">(</span><span class="va">ehub</span><span class="op">)</span> <span class="op">&gt;=</span> <span class="st">"2024-10-03"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co">## Resulting humanHippocampus2024 datasets from ExperimentHub query</span></span>
 <span><span class="va">myfiles</span></span>
@@ -551,7 +554,9 @@ Genomics Visium (<a href="https://www.10xgenomics.com/products/spatial-gene-expr
 <span><span class="co">#&gt; 3 V10B01-086_D1    detected   ####   0.0793619</span></span>
 <span><span class="co">#&gt; 4 V10B01-086_D1     aligned   ####   0.0793619</span></span>
 <span><span class="co">#&gt; 5 V10B01-086_C1      lowres   ####   0.0238086</span></span>
-<span><span class="co">#&gt; 6 V10B01-086_C1       hires   ####   0.0793619</span></span></code></pre></div>
+<span><span class="co">#&gt; 6 V10B01-086_C1       hires   ####   0.0793619</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/rm.html" class="external-link">rm</a></span><span class="op">(</span><span class="va">spatial_hpc_spe</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level4">
 <h4 id="snrna-seq-dataset">snRNA-seq dataset<a class="anchor" aria-label="anchor" href="#snrna-seq-dataset"></a>
@@ -892,7 +897,9 @@ using 10x Genomics Chromium (<a href="https://www.10xgenomics.com/products/singl
 <span><span class="co">#&gt; 1_AAACGAAAGGTGAGCT-1  1.423845 -2.689596 -3.4464814 -1.988053 -3.61184381</span></span>
 <span><span class="co">#&gt; 1_AAACGAACACAAAGTA-1 -8.673419  4.402902 12.7444647 -4.832953  1.25741946</span></span>
 <span><span class="co">#&gt; 1_AAACGAACAGGGACTA-1 -3.240716 -3.811464 -4.0678594  2.252951  0.05201437</span></span>
-<span><span class="co">#&gt; 1_AAACGAATCGACGCGT-1 -2.894538 -1.119306 -2.8875690 -1.855644  1.19378891</span></span></code></pre></div>
+<span><span class="co">#&gt; 1_AAACGAATCGACGCGT-1 -2.894538 -1.119306 -2.8875690 -1.855644  1.19378891</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/rm.html" class="external-link">rm</a></span><span class="op">(</span><span class="va">spatial_hpc_snrna_seq</span><span class="op">)</span></span></code></pre></div>
 </div>
 </div>
 <div class="section level3">
@@ -957,20 +964,20 @@ Cheng, Chang, and Iannone, 2024)</li>
 </ul>
 <p>This package was developed using <em><a href="https://bioconductor.org/packages/3.20/biocthis" class="external-link">biocthis</a></em></p>
 <p>Date the vignette was generated.</p>
-<pre><code><span><span class="co">#&gt; [1] "2024-10-03 18:13:58 EDT"</span></span>
-<span><span class="co">#&gt; Time difference of 0.049 secs</span></span></code></pre>
+<pre><code><span><span class="co">#&gt; [1] "2024-10-11 14:22:57 EDT"</span></span>
+<span><span class="co">#&gt; Time difference of 0.048 secs</span></span></code></pre>
 <p><code>R</code> session information</p>
 <pre><code><span><span class="co">#&gt; <span style="color: #00BBBB; font-weight: bold;">─ Session info ───────────────────────────────────────────────────────────────────────────────────────────────────────</span></span></span>
 <span><span class="co">#&gt;  <span style="color: #555555; font-style: italic;">setting </span> <span style="color: #555555; font-style: italic;">value</span></span></span>
 <span><span class="co">#&gt;  version  R version 4.4.1 (2024-06-14)</span></span>
-<span><span class="co">#&gt;  os       macOS 15.0</span></span>
+<span><span class="co">#&gt;  os       macOS 15.0.1</span></span>
 <span><span class="co">#&gt;  system   aarch64, darwin20</span></span>
 <span><span class="co">#&gt;  ui       X11</span></span>
 <span><span class="co">#&gt;  language en</span></span>
 <span><span class="co">#&gt;  collate  en_US.UTF-8</span></span>
 <span><span class="co">#&gt;  ctype    en_US.UTF-8</span></span>
 <span><span class="co">#&gt;  tz       America/New_York</span></span>
-<span><span class="co">#&gt;  date     2024-10-03</span></span>
+<span><span class="co">#&gt;  date     2024-10-11</span></span>
 <span><span class="co">#&gt;  pandoc   3.2 @ /Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools/aarch64/ (via rmarkdown)</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; <span style="color: #00BBBB; font-weight: bold;">─ Packages ───────────────────────────────────────────────────────────────────────────────────────────────────────────</span></span></span>
@@ -1016,7 +1023,7 @@ Cheng, Chang, and Iannone, 2024)</li>
 <span><span class="co">#&gt;  htmltools              0.5.8.1 <span style="color: #555555;">2024-04-04</span> <span style="color: #555555;">[1]</span> <span style="color: #555555;">CRAN (R 4.4.0)</span></span></span>
 <span><span class="co">#&gt;  htmlwidgets            1.6.4   <span style="color: #555555;">2023-12-06</span> <span style="color: #555555;">[1]</span> <span style="color: #555555;">CRAN (R 4.4.0)</span></span></span>
 <span><span class="co">#&gt;  httr                   1.4.7   <span style="color: #555555;">2023-08-15</span> <span style="color: #555555;">[1]</span> <span style="color: #555555;">CRAN (R 4.4.0)</span></span></span>
-<span><span class="co">#&gt;  humanHippocampus2024 * 0.99.0  <span style="color: #555555;">2024-10-03</span> <span style="color: #555555;">[1]</span> <span style="color: #555555;">Bioconductor</span></span></span>
+<span><span class="co">#&gt;  humanHippocampus2024 * 0.99.0  <span style="color: #555555;">2024-10-11</span> <span style="color: #555555;">[1]</span> <span style="color: #555555;">Bioconductor</span></span></span>
 <span><span class="co">#&gt;  IRanges              * 2.39.2  <span style="color: #555555;">2024-07-17</span> <span style="color: #555555;">[1]</span> <span style="color: #555555;">Bioconductor 3.20 (R 4.4.1)</span></span></span>
 <span><span class="co">#&gt;  jquerylib              0.1.4   <span style="color: #555555;">2021-04-26</span> <span style="color: #555555;">[1]</span> <span style="color: #555555;">CRAN (R 4.4.0)</span></span></span>
 <span><span class="co">#&gt;  jsonlite               1.8.9   <span style="color: #555555;">2024-09-20</span> <span style="color: #555555;">[1]</span> <span style="color: #555555;">CRAN (R 4.4.1)</span></span></span>
