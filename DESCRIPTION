@@ -17,7 +17,8 @@ Description: This is an ExperimentHub package that helps to access the
     based on [spatial_hpc](https://github.com/LieberInstitute/spatial_hpc) 
     project by Lieber Institute for Brain Development (LIBD) researchers and 
     collaborators.
-Depends: R (>= 4.4)
+Depends: 
+    R (>= 4.4)
 License: Artistic-2.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -35,6 +36,7 @@ Suggests:
     RefManageR
 Config/testthat/edition: 3
 BugReports: https://support.bioconductor.org/t/humanHippocampus2024
-biocViews: ExperimentHub, SequencingData, SpatialData, ExpressionData
+biocViews: ExperimentHub, SequencingData, SpatialData, ExpressionData, Tissue,
+    RNASeqData
 URL: https://github.com/LieberInstitute/spatial_hpc, https://christinehou11.github.io/humanHippocampus2024/
 VignetteBuilder: knitr
