@@ -137,6 +137,9 @@ ehub <- ExperimentHub()
 ## Load the datasets of the package
 myfiles <- query(ehub, "humanHippocampus2024")
 
+## Data is only available on recent snappshots
+stopifnot(snapshotDate(ehub) >= "2024-10-03")
+
 ## Resulting humanHippocampus2024 datasets from ExperimentHub query
 myfiles
 ```
