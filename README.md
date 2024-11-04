@@ -10,7 +10,7 @@ Welcome to the `humanHippocampus2024` package! This package helps to access the 
 
 ## Installation
 
-You can install humanHippocampus2024 like so:
+Please use R (version "4.4") and Bioconductor 3.20 then enter:
 
 ``` r
 if (!requireNamespace("BiocManager", quietly = TRUE)) {

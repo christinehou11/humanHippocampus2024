@@ -93,14 +93,14 @@ and refrain from emailing us. Thank you again for your interest in our work!
 repository can be found
 [here](https://github.com/christinehou11/humanHippocampus2024).
 
-R 4.4 or a newer version is required.
+Bioconductor version of 3.20 on R version of 4.4 is required.
 
 ```{r install, eval=FALSE}
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-# Bioconductor version of 3.20 on R 4.4.1 by October 3rd, 2024
 
-BiocManager::install(version = "devel")
+stopifnot(BiocManager::version() == "3.20")
+
 BiocManager::install("humanHippocampus2024")
 
 ## Check that you have a valid Bioconductor installation
@@ -136,9 +136,6 @@ ehub <- ExperimentHub()
 
 ## Load the datasets of the package
 myfiles <- query(ehub, "humanHippocampus2024")
-
-## Data is only available on recent snappshots
-stopifnot(snapshotDate(ehub) >= "2024-10-03")
 
 ## Resulting humanHippocampus2024 datasets from ExperimentHub query
 myfiles

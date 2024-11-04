@@ -1,6 +1,6 @@
 Package: humanHippocampus2024
 Title: Access to SRT and snRNA-seq data from spatial_HPC project
-Version: 0.99.0
+Version: 0.99.1
 Date: 2024-09-20
 Authors@R: 
     person(
