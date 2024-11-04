@@ -10,7 +10,7 @@ Authors@R:
         role = c("aut", "cre"),
         comment = c(ORCID = "0009-0001-5350-0629")
     )
-Description: This is an ExperimentHub package that helps to access the 
+Description: This is an ExperimentHub Data package that helps to access the 
     spatially-resolved transcriptomics and single-nucleus RNA sequencing data.
     The datasets are generated from adjacent tissue sections of the anterior 
     human hippocampus across ten adult neurotypical donors. The datasets are
