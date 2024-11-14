@@ -99,8 +99,6 @@ Bioconductor version of 3.20 on R version of 4.4 is required.
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
-stopifnot(BiocManager::version() == "3.20")
-
 BiocManager::install("humanHippocampus2024")
 
 ## Check that you have a valid Bioconductor installation
@@ -168,26 +166,16 @@ head(colData(spatial_hpc_spe), 3)
 head(rowData(spatial_hpc_spe), 3)
 
 # Access the original counts
-class(assays(spatial_hpc_spe)$counts)
-dim(assays(spatial_hpc_spe)$counts)
 assays(spatial_hpc_spe)$counts[1:3, 1:3]
 
 # Access the log-normalized counts
-class(assays(spatial_hpc_spe)$logcounts)
 assays(spatial_hpc_spe)$logcounts[1:3, 1:3]
 
 # Access the reduced dimension methods
 reducedDimNames(spatial_hpc_spe)
-reducedDim(spatial_hpc_spe, "10x_pca")[1:5,]
 
 # Access the spatial coordinates
 spatialCoordsNames(spatial_hpc_spe)
-head(spatialCoords(spatial_hpc_spe))
-
-# Access the image data
-head(imgData(spatial_hpc_spe))
-
-rm(spatial_hpc_spe)
 ```
 
 #### snRNA-seq dataset
@@ -216,19 +204,13 @@ head(colData(spatial_hpc_snrna_seq),3)
 head(rowData(spatial_hpc_snrna_seq), 3)
 
 # Access the original counts
-class(assays(spatial_hpc_snrna_seq)$counts)
-dim(assays(spatial_hpc_snrna_seq)$counts)
 assays(spatial_hpc_snrna_seq)$counts[1:3, 1:3]
 
 # Access the log-normalized counts
-class(assays(spatial_hpc_snrna_seq)$logcounts)
 assays(spatial_hpc_snrna_seq)$logcounts[1:3, 1:3]
 
 # Access the reduced dimension methods
 reducedDimNames(spatial_hpc_snrna_seq)
-reducedDim(spatial_hpc_snrna_seq, "PCA")[1:5,]
-
-rm(spatial_hpc_snrna_seq)
 ```
 
 ### Citation
