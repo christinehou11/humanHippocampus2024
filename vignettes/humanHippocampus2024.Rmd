@@ -237,19 +237,6 @@ bib <- c(
 )
 ```
 
-The *humanHippocampus2024* package was made possible thanks to:
-
--   `R` `r Citep(bib[["R"]])`
--   `r Biocpkg("BiocStyle")` `r Citep(bib[["BiocStyle"]])`
--   `r CRANpkg("knitr")` `r Citep(bib[["knitr"]])`
--   `r CRANpkg("RefManageR")` `r Citep(bib[["RefManageR"]])`
--   `r CRANpkg("rmarkdown")` `r Citep(bib[["rmarkdown"]])`
--   `r CRANpkg("sessioninfo")` `r Citep(bib[["sessioninfo"]])`
--   `r CRANpkg("testthat")` `r Citep(bib[["testthat"]])`
--   `r Biocpkg('AnnotationHub')` `r Citep(bib[['AnnotationHub']])`
--   `r Biocpkg('ExperimentHub')` `r Citep(bib[['ExperimentHub']])`
--   `r Biocpkg('SummarizedExperiment')` `r Citep(bib[['SummarizedExperiment']])`
-
 This package was developed using `r BiocStyle::Biocpkg("biocthis")`
 
 ```{r vignetteSetup, echo=FALSE, message=FALSE, warning = FALSE}
