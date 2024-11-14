@@ -176,6 +176,8 @@ reducedDimNames(spatial_hpc_spe)
 
 # Access the spatial coordinates
 spatialCoordsNames(spatial_hpc_spe)
+
+rm(spatial_hpc_spe)
 ```
 
 #### snRNA-seq dataset
@@ -239,16 +241,10 @@ bib <- c(
 
 This package was developed using `r BiocStyle::Biocpkg("biocthis")`
 
-```{r vignetteSetup, echo=FALSE, message=FALSE, warning = FALSE}
-startTime <- Sys.time()
-```
-
 Date the vignette was generated.
 
 ```{r time, echo=FALSE}
 Sys.time()
-totalTime <- diff(c(startTime, Sys.time()))
-round(totalTime, digits = 3)
 ```
 
 `R` session information

@@ -1,6 +1,6 @@
 Package: humanHippocampus2024
 Title: Access to SRT and snRNA-seq data from spatial_HPC project
-Version: 0.99.3
+Version: 0.99.4
 Date: 2024-09-20
 Authors@R: 
     person(
@@ -17,22 +17,19 @@ Description: This is an ExperimentHub Data package that helps to access the
     based on [spatial_hpc](https://github.com/LieberInstitute/spatial_hpc) 
     project by Lieber Institute for Brain Development (LIBD) researchers and 
     collaborators.
-Depends: 
-    R (>= 4.4)
 License: Artistic-2.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+Imports: ExperimentHub, SummarizedExperiment,SpatialExperiment
 Suggests: 
     testthat (>= 3.0.0),
     sessioninfo,
     rmarkdown,
     knitr,
     BiocStyle,
-    ExperimentHub,
+    ExperimentHubData,
     AnnotationHubData,
-    SummarizedExperiment,
-    SpatialExperiment,
     RefManageR
 Config/testthat/edition: 3
 BugReports: https://support.bioconductor.org/t/humanHippocampus2024
