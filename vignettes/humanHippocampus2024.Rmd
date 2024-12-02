@@ -105,16 +105,6 @@ BiocManager::install("humanHippocampus2024")
 BiocManager::valid()
 ```
 
-The development version from GitHub can be obtained by:
-
-```{r github, eval=FALSE}
-if (!requireNamespace("remotes", quietly = TRUE)) {
-    install.packages("remotes")
-}
-
-remotes::install_github("christinehou11/humanHippocampus2024")
-```
-
 ### *humanHippocampus2024* datasets
 
 #### Load the packages

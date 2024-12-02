@@ -1,6 +1,6 @@
 Package: humanHippocampus2024
 Title: Access to SRT and snRNA-seq data from spatial_HPC project
-Version: 0.99.4
+Version: 0.99.5
 Date: 2024-09-20
 Authors@R: 
     person(
@@ -20,6 +20,7 @@ Description: This is an ExperimentHub Data package that helps to access the
 License: Artistic-2.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
+Depends: R (>= 4.4)
 RoxygenNote: 7.3.2
 Imports: ExperimentHub, SummarizedExperiment,SpatialExperiment
 Suggests: 
