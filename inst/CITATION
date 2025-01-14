@@ -17,8 +17,10 @@ c(
         doi = '10.18129/B9.bioc.humanHippocampus2024'
     ),
     bibentry(bibtype="article",
-        title = "An integrated single-nucleus and spatial transcriptomics atlas reveals the molecular landscape of the human hippocampus",
+        title = "An integrated single-nucleus and spatial transcriptomics atlas reveals the molecular landscape of the human
+hippocampus",
         author = personList(
+            as.person("Jacqueline R. Thompson"),
             as.person("Erik D. Nelson"),
             as.person("Madhavi Tippani"),
             as.person("Anthony D. Ramnauth"),
@@ -30,6 +32,7 @@ c(
             as.person("Svitlana V. Bach"),
             as.person("Uma M. Kaipa"),
             as.person("Jianing Yao"),
+            as.person("Christine Hou"),
             as.person("Joel E. Kleinman"),
             as.person("Leonardo Collado-Torres"),
             as.person("Shizhong Han"),
