@@ -1,3 +1,7 @@
+# humanHippocampus2024 0.99.7
+
+-   Re-formatted the README
+
 # humanHippocampus2024 0.99.6
 
 -   Updated citation author list and title
